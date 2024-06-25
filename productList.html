@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productenlijst</title>
     <link rel="stylesheet" href="style/productList.css">
-    <title>Landingspage</title>
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a id="headerLogo_a" href="index.html"><img id="headerLogo" src="img/Bol.com_logo.svg" alt="logo"></a>
+            <a title="producten" id="productListLink" href="productList.html">Producten</a>
+            <a id="cartLink" href="cart.html">Winkelwagen</a>
+        </nav>
+    </header>
+    <main>
+        <section class="inputs">
+            <div><input id="checkbox-red" type="checkbox" class="filter">
+                <label for="checkbox-red" class="label">barbecues</label>
+            </div>
+            <div><input id="checkbox-green" type="checkbox" class="filter">
+                <label for="checkbox-green" class="label">shirts</label>
+            </div>
+            <div><input id="checkbox-blue" type="checkbox" class="filter">
+                <label for="checkbox-blue" class="label">airfryers</label>
+            </div>
+
+        </section>
+        <ul class="colors">
+            <!--red is voor de eerste optie
+                green is voor de tweede optie
+                blue is voor de derde optie-->
+            <li class="color" data-category="red"><a href="product.html"><img src="https://media.s-bol.com/nYBAykXqJRBl/X62mnkm/135x210.jpg" alt="barbecue"></a></li>
+            <li class="color" data-category="green"><img src="https://media.s-bol.com/njm32gQVDgql/ljOQ11/165x210.jpg" alt="shirt"></li>
+            <li class="color" data-category="blue"><img src="https://media.s-bol.com/gpL0GwM5lpok/168x197.jpg" alt="airfryer"></li>
+            <li class="color" data-category="red"><img src="https://media.s-bol.com/g8kMBOw1mm6Y/XLvNWNA/94x210.jpg" alt="barbecue"></li>
+            <li class="color" data-category="green"><img src="https://media.s-bol.com/QB6gnJ5yJA15/gvAXOZ/160x210.jpg" alt="shirt"></li>
+            <li class="color" data-category="blue"><img src="https://media.s-bol.com/3oQkxRX7p4A/168x192.jpg" alt="airfryer"></li>
+            <li class="color" data-category="red"><img src="https://media.s-bol.com/rVm8Z4oAG51B/OgZWkyp/156x210.jpg" alt="barbecue"></li>
+            <li class="color" data-category="green"><img src="https://media.s-bol.com/72KDlx79KGzj/jRQmgov/168x206.jpg" alt="shirt"></li>
+        </ul>
+    </main>
 </body>
+
 </html>
