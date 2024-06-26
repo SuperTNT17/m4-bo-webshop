@@ -4,11 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Winkelwagen</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://assets.s-bol.com/favicon-32x32.png?v=476aOAdO8j">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="style/cart.css">
         <link rel="stylesheet" href="style/header.css">
         <link rel="stylesheet" href="style/footer.css">
         <script src="js/darkmode.js" defer></script>
+        <script src="js/cart.js" defer></script>
     </head>
 <body>
     <header>
@@ -23,7 +25,123 @@
         </nav>
     </header>
     <main>
-        <h1>JE HEBT 15 [KROMER] GEWONNEN DOOR [ONVRIJWILLIG] MEE TE DOEN AAN [PIPIS]11!!1!</h1>
+        <section id="cartItems">
+            <ul>
+                <li class="cartItem">
+                    <a href="product1.html"><img src="https://media.s-bol.com/nYBAykXqJRBl/X62mnkm/135x210.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Weber Compact Kettle</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;77,-</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product2.html"><img src="https://media.s-bol.com/njm32gQVDgql/ljOQ11/165x210.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Blauw shirt</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;9,99</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product3.html"><img src="https://media.s-bol.com/gpL0GwM5lpok/168x197.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Supair fryer</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;94,95</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product4.html"><img src="https://media.s-bol.com/g8kMBOw1mm6Y/XLvNWNA/94x210.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Barbecue 4</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;48,49</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product5.html"><img src="https://media.s-bol.com/QB6gnJ5yJA15/gvAXOZ/160x210.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Duur shirt</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;149,99</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product6.html"><img src="https://media.s-bol.com/3oQkxRX7p4A/168x192.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">airfryer 2</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad product--niet-op-voorraad">niet op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;3,69</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product7.html"><img src="https://media.s-bol.com/rVm8Z4oAG51B/OgZWkyp/156x210.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Garden barbecue</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;98,95</p>
+                </li>
+                <li class="cartItem">
+                    <a href="product8.html"><img src="https://media.s-bol.com/72KDlx79KGzj/jRQmgov/168x206.jpg" alt="product afbeelding"></a>
+                    <div>
+                        <div class="product--info">
+                            <p class="product--naam">Wit shirt</p>
+                            <p class="product--aantal">1x</p>
+                        </div>
+                        <p class="product--voorraad">op voorraad</p>
+                        <p class="product--bezorging"><i class="fa-solid fa-circle-info" title="We doen er alles aan om jouw producten zo snel mogelijk te bezorgen"></i> voor 23:59 besteld, morgen in huis</p>
+                    </div>
+                    <p class="product--prijs">&euro;9,99</p>
+                </li>
+            </ul>
+        </section>
+        <section id="checkout">
+            <h2>Overzicht</h2>
+            <div id="checkout--artikelen">
+                <p>Artikelen</p>
+                <p class="checkout--geld">&euro; 493,05</p>
+            </div>
+            <div id="checkout--verzendkosten">
+                <p>Verzendkosten <i class="fa-solid fa-circle-info" title="Gratis bezorging bij bestellingen vanaf &euro;20,-"></i></p>
+                <p class="checkout--geld">&euro; 0,-</p>
+            </div>
+            <div id="checkout--totaal">
+                <p>Totaal</p>
+                <p class="checkout--geld">&euro; 493.05</p>
+            </div>
+            <a id="checkout--betalen" href="#">Betalen</a>
+            <p id="checkout--fail">betaling mislukt :&#40;</p>
+        </section>
     </main>
     <footer>
         <p>Wil je ons volgen?</p>

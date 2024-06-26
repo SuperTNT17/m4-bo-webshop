@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --red: rgb(255, 0, 0);
+    --red-dark: rgb(192, 0, 0);
+}
+
 html{
     font-size: 62.5%;
 }
@@ -39,9 +44,13 @@ main > div > img{
 }
 
 #prijs{
-    color: red;
+    color: var(--red);
     font-weight: bold;
     font-size: 3rem;
+}
+
+body.dark-mode #prijs{
+    color: var(--red-dark);
 }
 
 #voorraad{
