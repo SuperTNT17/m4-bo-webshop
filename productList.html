@@ -5,20 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>productenlijst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style/productList.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="js/filter.js" defer></script>
+    <script src="js/sort.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <a id="headerLogo_a" href="index.html"><img id="headerLogo" src="img/Bol.com_logo.svg" alt="logo"></a>
-            <a title="producten" id="productListLink" href="productList.html">Producten</a>
-            <a id="cartLink" href="cart.html">Winkelwagen</a>
+            <a class="textLink" title="producten" id="productListLink" href="productList.html">Producten</a>
+            <a class="textLink" id="cartLink" href="cart.html">Winkelwagen</a>
+            <button id="dark-mode-toggle">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </button>
         </nav>
     </header>
     <main>
-        <section class="inputs">
+        <aside class="inputs">
             <div><input id="checkbox-red" type="checkbox" class="filter">
                 <label for="checkbox-red" class="label">barbecues</label>
             </div>
@@ -28,22 +37,37 @@
             <div><input id="checkbox-blue" type="checkbox" class="filter">
                 <label for="checkbox-blue" class="label">airfryers</label>
             </div>
-
-        </section>
+            <select id="sort" name="sort" value="sorteer" selected>
+                <option value="sorteer" hidden>Sorteer</option>
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+            </select>
+        </aside>
         <ul class="colors">
             <!--red is voor de eerste optie
                 green is voor de tweede optie
                 blue is voor de derde optie-->
-            <li class="color" data-category="red"><a href="product.html"><img src="https://media.s-bol.com/nYBAykXqJRBl/X62mnkm/135x210.jpg" alt="barbecue"></a></li>
-            <li class="color" data-category="green"><img src="https://media.s-bol.com/njm32gQVDgql/ljOQ11/165x210.jpg" alt="shirt"></li>
-            <li class="color" data-category="blue"><img src="https://media.s-bol.com/gpL0GwM5lpok/168x197.jpg" alt="airfryer"></li>
-            <li class="color" data-category="red"><img src="https://media.s-bol.com/g8kMBOw1mm6Y/XLvNWNA/94x210.jpg" alt="barbecue"></li>
-            <li class="color" data-category="green"><img src="https://media.s-bol.com/QB6gnJ5yJA15/gvAXOZ/160x210.jpg" alt="shirt"></li>
-            <li class="color" data-category="blue"><img src="https://media.s-bol.com/3oQkxRX7p4A/168x192.jpg" alt="airfryer"></li>
-            <li class="color" data-category="red"><img src="https://media.s-bol.com/rVm8Z4oAG51B/OgZWkyp/156x210.jpg" alt="barbecue"></li>
-            <li class="color" data-category="green"><img src="https://media.s-bol.com/72KDlx79KGzj/jRQmgov/168x206.jpg" alt="shirt"></li>
+            <li class="color" data-category="red" data-name="barbecue1"><a href="product1.html"><img src="https://media.s-bol.com/nYBAykXqJRBl/X62mnkm/135x210.jpg" alt="barbecue"></a></li>
+            <li class="color" data-category="green" data-name="shirt1"><a href="product2.html"><img src="https://media.s-bol.com/njm32gQVDgql/ljOQ11/165x210.jpg" alt="shirt"></a></li>
+            <li class="color" data-category="blue" data-name="airfryer1"><a href="product3.html"><img src="https://media.s-bol.com/gpL0GwM5lpok/168x197.jpg" alt="airfryer"></a></li>
+            <li class="color" data-category="red" data-name="barbecue2"><a href="product4.html"><img src="https://media.s-bol.com/g8kMBOw1mm6Y/XLvNWNA/94x210.jpg" alt="barbecue"></a></li>
+            <li class="color" data-category="green" data-name="shirt2"><a href="product5.html"><img src="https://media.s-bol.com/QB6gnJ5yJA15/gvAXOZ/160x210.jpg" alt="shirt"></a></li>
+            <li class="color" data-category="blue" data-name="airfryer2"><a href="product6.html"><img src="https://media.s-bol.com/3oQkxRX7p4A/168x192.jpg" alt="airfryer"></a></li>
+            <li class="color" data-category="red" data-name="barbecue3"><a href="product7.html"><img src="https://media.s-bol.com/rVm8Z4oAG51B/OgZWkyp/156x210.jpg" alt="barbecue"></a></li>
+            <li class="color" data-category="green" data-name="shirt3"><a href="product8.html"><img src="https://media.s-bol.com/72KDlx79KGzj/jRQmgov/168x206.jpg" alt="shirt"></a></li>
         </ul>
     </main>
+    <footer>
+        <p>Wil je ons volgen?</p>
+        <div>
+            <a href="//www.facebook.com/bolpuntcom" target="_blank"><img id="facebook" src="img/facebook.svg"></a>
+            <a href="//www.pinterest.com/bol" target="_blank"><img src="img/pinterest.svg"></a>
+            <a href="//www.instagram.com/bol" target="_blank"><img src="img/instagram.svg"></a>
+            <a href="//www.youtube.com/user/bolcom" target="_blank"><img src="img/youtube.svg"></a>
+            <a href="//www.linkedin.com/company/11699" target="_blank"><img src="img/linkedin.svg"></a>
+            <a href="//www.tiktok.com/@bol" target="_blank"><img src="img/tiktok.svg"></a>
+        </div>
+    </footer>
 </body>
 
 </html>

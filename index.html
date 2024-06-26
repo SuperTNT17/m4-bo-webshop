@@ -4,26 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/landingsPage.css">
     <title>Landingspage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/landingsPage.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="js/darkmode.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <img id="headerLogo" src="img/Bol.com_logo.svg" alt="logo">
-            <a title="producten" id="productListLink" href="productList.html">Producten</a>
-            <a id="cartLink" href="cart.html">Winkelwagen</a>
+            <a id="headerLogo_a" href="index.html"><img id="headerLogo" src="img/Bol.com_logo.svg" alt="logo"></a>
+            <a class="textLink" title="producten" id="productListLink" href="productList.html">Producten</a>
+            <a class="textLink" id="cartLink" href="cart.html">Winkelwagen</a>
+            <button id="dark-mode-toggle">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </button>
         </nav>
     </header>
 
+
     <section id="eyecatcher">
-        <div>
-            <h1>De winkel van ons allemaal</h1>
-            <a href="product.html">bekijk nu</a>
+        <div id="eyecatcher--content">
+            <div id="eyecatcher--content--text">
+                <h1>De winkel van ons allemaal</h1>
+                <a href="productList.html">Shop Nu!</a>
+            </div>
+            <img id="eyecatcher--content--img" src="img/eyecatcher.webp">
         </div>
-        <img
-            src="https://bol.images.contentstack.eu/v3/assets/bltf814e9f78be52b93/blt00f3c2ed61197282/665c9a7c7afcbb1c174134fd/NBA_Vaderdag_strik_Content_stack_3840x1440.jpg?environment=blt0fb12aeb38c76113&locale=nl-nl&quality=80&auto=webp&crop=1920%2C1080&dpr=2&width=576">
     </section>
 
     <main>
@@ -33,7 +43,7 @@
             <div>
                 <h2>Grote kortingen!</h2>
                 <p>Grote kortingen op een aantal producten die je wel wil kopen</p>
-                <a href="product.html">Bekijk nu</a>
+                <a href="productList.html">Bekijk nu</a>
             </div>
         </section>
         <section id="aanbiedingenImages">
@@ -68,12 +78,16 @@
         </section>
         <section id="info">
             <div id="info--tuin" class="imageMetInfo">
-                <img src="https://media.s-bol.com/J986nRGw0op9/R6LKLqK/512x341.jpg" alt="tuin">
+                <a href="productList.html">
+                    <img src="https://media.s-bol.com/J986nRGw0op9/R6LKLqK/512x341.jpg" alt="tuin">
+                </a>
                 <h3>tuin</h3>
                 <p>haal hier de beste artikelen voor in de tuin</p>
             </div>
             <div id="info--huis" class="imageMetInfo">
-                <img src="https://media.s-bol.com/mg3pMrJEGQZr/J66k6kP/384x512.jpg" alt="huis">
+                <a href="productList.html">
+                    <img src="https://media.s-bol.com/mg3pMrJEGQZr/J66k6kP/384x512.jpg" alt="huis">
+                </a>
                 <h3>huis</h3>
                 <p>haal hier de beste artikelen voor in huis</p>
             </div>
