@@ -147,8 +147,32 @@ body.dark-mode .product--prijs{
     filter: brightness(0.8);
 }
 
-#checkout--fail{
+#modal{
+    width: 50rem;
+    background-color: var(--blue);
+    height: 20rem;
     display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 60rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.274);
+}
+
+body.dark-mode #modal{
+    box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.274);
+    background-color: var(--blue-dark);
+}
+
+#close{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 4rem;
+}
+
+#checkout--fail{
+    
     color: var(--red);
 }
 
